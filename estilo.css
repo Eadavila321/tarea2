@@ -1,0 +1,56 @@
+*{
+    margin: 0;/*Deshabilita los margenes por defecto*/
+    padding: 0;/*Deshabilita los margenes internos por defecto*/
+    box-sizing: border-box;/*El tamaño de la caja se quedara fijo*/
+     --color1:#07B0F2;/*Define un color a una palabras en este caso el color es #07B0F2*/
+     --color2:#05C7F2;/*Define un color a una palabras en este caso el color es #05C7F2*/
+     --color3:#F2C029;/*Define un color a una palabras en este caso el color es #F2C029*/
+     --color4:#F2AE2E;/*Define un color a una palabras en este caso el color es #F2AE2E*/
+     --color5:#F2F2F2;/*Define un color a una palabras en este caso el color es #F2F2F2*/
+}
+main{
+    width: 800px;/*800px a el ancho de la caja*/
+
+    margin: 20px auto;/*20px a los cuatro lados y hace que el bloque se centre*/
+}
+#cabecera{
+    display: flex;/*Coloca las cajas como celdas de excel*/
+    flex-direction: row;/*Ordena los elementos en un espacio hacia la derecha*/
+    justify-content: space-between;/*Distribuye el espacio de los items flex en el eje principal de su contenedor equitativamente*/
+    align-items: center;/*Centra los elementos en el contenedor*/
+    background-color: var(--color1);/* color de fondo definido por el valor de --color1*/
+    padding: 10px;/*10px a los cuatro lados internos de los margenes*/
+    margin: 5px;/*5px a los cuatro lados*/
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;/*Destribuye el espacio de los items flex en el eje principal de su contenedor a la derecha*/
+    margin: 5px;/*5px a los cuatro la dos*/
+}
+#menu div{
+    padding: 10px;/*10px a los margenes internos*/
+}
+#contenido{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.contenido{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid var(--color3);/*2px de borde de forma solida y con color --color3*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;/*Pone la fuente de la letra en calibri*/
+}
+h3{
+    text-align: center;/*Pone en aliniaciòn horizontal un bloque de text centrado*/
+    color: var(--color4);/*Color del texto en --color4*/
+    background-color: var(--color5);/*El fondo de color es --color5*/
+}
+#pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;/*Destribuye el espacio de los items flex en el eje principal de su contenedor en el centro*/
+    background-color: var(--color1);/*El color del fondo es --color1*/
+}
